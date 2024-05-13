@@ -1,0 +1,35 @@
+.body{
+    background-color: rgb(7, 163, 254);
+}
+.LogoHome {
+    
+    display: flex;
+    justify-content: right; 
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.LogoHome img {
+    width: 40px;
+    height: 40px;
+}
+/* .NAME{
+    font: 500;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+} */
+
+
+.Back-Button {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .Back-Button img {
+    width:15px;
+    height: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
