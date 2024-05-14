@@ -17,18 +17,20 @@ const knex = require('knex')(require("./knex"));
 
 let server;
 
-knex
-    .raw('SELECT 1+1 as result')
-    .then(() => {
-        console.log('MySQL connected');
-        server = app.listen(5000, () => {
-            console.log(`Listening to port 5000`);
-        });
-    })
-    .catch((error) => {
-        console.log('MySQL connection error:', error);
-    });
-
+// knex
+//     .raw('SELECT 1+1 as result')
+//     .then(() => {
+//         console.log('MySQL connected');
+//         server = app.listen(5000, () => {
+//             console.log(`Listening to port 5000`);
+//         });
+//     })
+//     .catch((error) => {
+//         console.log('MySQL connection error:', error);
+//     });
+server = app.listen(5000, () => {
+    console.log(`Listening to port 5000`);
+});
 app.use('/v1', routes);
 
 const exitHandler = () => {
